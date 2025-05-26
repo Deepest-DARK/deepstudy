@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>deepstudy</title>
+    <link rel="stylesheet" href="/deepstudy-frontend/src/css/index.css">
+
+    <!-- scripts -->
+    <script src="/deepstudy-frontend/src/js/toggleTheme.js" defer></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            font-family: var(--font-family);
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div id="navbar"></div>
+    <script>
+        fetch('./components/navBar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('navbar').innerHTML = html
+            })
+            .catch(error => {
+                console.error('Failed to load navbar : ', error);
+
+            })
+    </script>
+
+    <div id="content"></div>
+    <script>
+        fetch('./components/content.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('content').innerHTML = html
+                const event = new Event('navbarLoaded')
+                document.dispatchEvent(event)
+            })
+            .catch(error => {
+                console.error('Failed to load content : ', error);
+
+            })
+    </script>
+
+
+
 </body>
+
 </html>

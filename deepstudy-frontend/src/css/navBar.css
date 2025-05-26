@@ -1,0 +1,78 @@
+nav {
+    box-sizing: border-box;
+    width: 100%;
+    height: 7vh;
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 20px 0px var(--border-color);
+}
+
+ul {
+    display: flex;
+    height: 100%;
+    list-style: none;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#home-icon,
+#sun-icon,
+#moon-icon {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    fill: var(--icon-color);
+}
+
+#register {
+    display: flex;
+    gap: 10px;
+}
+
+#home-icon:hover,
+#sun-icon:hover,
+#moon-icon:hover,
+#btn-signin:hover,
+#btn-signup:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#btn-signin,
+#btn-signup {
+    all: unset;
+    font-size: var(--text-size);
+    background-color: var(--btn-color);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+
+#btn-signin,
+#btn-signup {
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#btn-signin::before,
+#btn-signup::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+#btn-signin:hover::before,
+#btn-signup:hover::before {
+    left: 100%;
+}
