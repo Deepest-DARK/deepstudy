@@ -18,7 +18,7 @@ const themes = {
     '--border-color': '#4f4f4f',
     '--background-color': '#212121',
     '--btn-color': '#a0a0a0',
-    '--text-color': 'black',
+    '--text-color': 'white',
     '--text-size': '18px',
     '--icon-color': '#ffffff',
     '--icon-size': '30px',
@@ -63,7 +63,7 @@ setIcon()
     if (e.target.closest('.theme')) {
       console.log("inside the listener")
       toggleTheme()
-      setIcon
+      setIcon()
       applyTheme()
     }
   })
