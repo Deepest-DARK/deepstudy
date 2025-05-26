@@ -1,0 +1,9 @@
+body{
+    overflow-y: hidden;
+}
+
+
+#navbar{
+    position: sticky;
+    top: 0;
+}
