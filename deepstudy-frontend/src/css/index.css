@@ -1,9 +1,11 @@
-body{
-    overflow-y: hidden;
+body {
+    overflow: hidden;
 }
 
-
-#navbar{
+#navbar {
     position: sticky;
     top: 0;
+    width: 100vw;
+    height: 7vh;
+    background-color: var(--nav-color);
 }
