@@ -1,8 +1,12 @@
-main{
-    background-color: var(--background-color);
+main {
+    width: 100vw;
     padding-top: 10px;
     height: 100vh;
     overflow-y: auto;
+    background-color: var(--background-color);
+}
+
+article {
     width: 60%;
     margin: auto;
 }
