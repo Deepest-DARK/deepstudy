@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Deepstudy</title>
+    <link rel="stylesheet" href="../../css/sing-in.css">
+
+    <script type="module" src="../../js/register.js"></script>
+</head>
+
+<body>
+    <header>
+        <h2> Sign in to Deepstudy </h2>
+    </header>
+    <main id="signin-container">
+        <form action="">
+            <label for="email">email address</label>
+            <input id="email" type="email" name="email">
+            <label for="password">password</label>
+            <div id="password-visibility-toggle">
+                <input id="password" type="password" name="password" autocomplete="off" required>
+                <svg id="eye-open" class="icon-eye" style="display:none;position:absolute; top: 3; right: 6;" width="20"
+                    height="20" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10,50 C20,30 40,20 50,20 C60,20 80,30 90,50 C80,70 60,80 50,80 C40,80 20,70 10,50"
+                        fill="none" stroke="black" stroke-width="4" />
+                    <circle cx="50" cy="50" r="10" fill="black" />
+                </svg>
+                <svg id="eye-closed" class="icon-eye" style="position:absolute; top: 3; right: 6;" width="20"
+                    height="20" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10,50 C20,60 40,65 50,65 C60,65 80,60 90,50" fill="none" stroke="black"
+                        stroke-width="4" />
+                    <line x1="30" y1="55" x2="25" y2="65" stroke="black" stroke-width="2" />
+                    <line x1="50" y1="60" x2="45" y2="70" stroke="black" stroke-width="2" />
+                    <line x1="70" y1="55" x2="65" y2="65" stroke="black" stroke-width="2" />
+                </svg>
+            </div>
+            <button id="button-signin" type="submit">sign in</button>
+        </form>
+
+        <section id="auth">
+            <button id="google-auth">
+                <img id="google-icon" src="../../../assets/google.svg" alt="google">
+                <span>Sign up with Google</span>
+            </button>
+            <button id="github-auth">
+                <img id="github-icon" src="../../../assets/github.svg" alt="google">
+                <span>Sign up with GitHub</span>
+            </button>
+        </section>
+    </main>
+    <footer>
+        <p>
+            New to Deepstudy? <a href="../signup/">Creat a new account</a>
+        </p>
+    </footer>
+</body>
+
+</html>
