@@ -1,14 +1,9 @@
 main {
     width: 100vw;
-    padding-top: 10px;
     height: 100vh;
+    padding-top: 10px;
     overflow-y: auto;
     background-color: var(--background-color);
     scrollbar-color: gray var(--background-color);
     scrollbar-width: thin;
-}
-
-article {
-    width: 60%;
-    margin: auto;
 }

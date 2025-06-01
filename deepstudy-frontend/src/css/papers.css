@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+
+body {
+    overflow: hidden;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 7vh;
+    background-color: var(--nav-color);
+}

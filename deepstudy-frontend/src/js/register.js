@@ -1,4 +1,4 @@
-import { applyTheme } from "../utils/globalVariables.js";
+import { applyTheme } from "../utils/theme.js"
 
 applyTheme()
 
@@ -18,4 +18,8 @@ function toggleEye() {
 
 document.addEventListener('DOMContentLoaded', () => {
     toggleEye()
+})
+
+document.getElementById('left-arrow').addEventListener('click',()=>{
+    window.location.href = '/deepstudy-frontend/src/index.html'
 })

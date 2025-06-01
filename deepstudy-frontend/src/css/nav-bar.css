@@ -9,10 +9,31 @@ ul {
     height: 100%;
     list-style: none;
     gap: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
     align-items: center;
     justify-content: space-between;
+}
+
+#left-group,
+#right-group,
+#register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#left-group{
+    gap: 30px;
+}
+
+#left-group a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#left-group a:hover{
+    text-decoration: underline;
 }
 
 #home-icon,
@@ -22,11 +43,6 @@ ul {
     height: var(--icon-size);
     fill: var(--icon-color);
     color: var(--icon-color);
-}
-
-#register {
-    display: flex;
-    gap: 10px;
 }
 
 #home-icon:hover,

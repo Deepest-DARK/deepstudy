@@ -3,7 +3,7 @@ import { applyTheme, toggleTheme } from "../utils/theme.js"
 
 applyTheme()
 
-fetch('./components/nav-bar.html')
+fetch('../../components/nav-bar.html')
     .then(response => response.text())
     .then(html => {
         document.getElementById('navbar').innerHTML = html
@@ -11,17 +11,15 @@ fetch('./components/nav-bar.html')
     })
     .catch(error => {
         console.error('Failed to load navbar : ', error)
-
     })
 
-fetch('./components/content.html')
+fetch('../../components/filter.html')
     .then(response => response.text())
     .then(html => {
-        document.getElementById('content').innerHTML = html
+        document.getElementById('filter').innerHTML = html
     })
     .catch(error => {
-        console.error('Failed to load content : ', error);
-
+        console.error('Failed to load filter : ', error);
     })
 
 
