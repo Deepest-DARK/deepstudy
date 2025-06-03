@@ -166,6 +166,10 @@ footer p a {
     color: rebeccapurple;
 }
 
+footer p a:hover {
+    text-decoration: underline;
+}
+
 a:hover {
     cursor: pointer;
 }

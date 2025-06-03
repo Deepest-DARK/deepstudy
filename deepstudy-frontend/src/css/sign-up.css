@@ -67,6 +67,10 @@ a {
     color: rgb(86, 86, 255);
 }
 
+a:hover{
+    text-decoration: underline;
+}
+
 main {
     height: 60%;
     /* background-color: red; */

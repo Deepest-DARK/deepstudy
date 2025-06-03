@@ -17,6 +17,7 @@ fetch('../../components/filter.html')
     .then(response => response.text())
     .then(html => {
         document.getElementById('filter').innerHTML = html
+        toggleOptions()
     })
     .catch(error => {
         console.error('Failed to load filter : ', error);
@@ -31,3 +32,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 })
+
+function toggleOptions() {
+    document.querySelectorAll('.filter').forEach((element) => {
+
+        if (element.id !== "save") {
+            element.addEventListener('mouseenter', (e) => {
+                e.target.querySelector('ul').style.display = 'flex';
+            })
+            element.addEventListener('mouseleave', (e) => {
+                e.target.querySelector('ul').style.display = 'none';
+            })
+        }
+    })
+
+}

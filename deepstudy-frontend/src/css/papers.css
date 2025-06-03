@@ -16,3 +16,8 @@ body {
     height: 7vh;
     background-color: var(--nav-color);
 }
+
+nav{
+    box-shadow: none;
+    border-bottom: 0.5px solid var(--secondary-color);
+}
